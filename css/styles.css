@@ -32,7 +32,9 @@ header {
 }
 
 .container {
-    width: 1200px;
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -136,13 +138,16 @@ ul {
     fill: var(--primary-text-color);
 }
 
-.link-icon:hover,
-.link-icon:focus {
+.link:hover .link-icon {
+    fill: var(--accent-color);
+}
+
+.link:focus .link-icon {
     fill: var(--accent-color);
 }
 
 .overlay {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -212,6 +217,10 @@ h3 {
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: var(--header-bg-color);
+}
+
+.advantages-item {
+    width: 270px;
 }
 
 .section-advantages li:not(:last-child) {
@@ -343,11 +352,16 @@ img {
     fill: #AFB1B8;
 }
 
-.net-link:hover {
+.net-link:hover,
+.net-link:focus {
     background-color: var(--accent-color);
 }
 
 .net-link:hover .net-icon {
+    fill: var(--header-bg-color);
+}
+
+.net-link:focus .net-icon {
     fill: var(--header-bg-color);
 }
 
@@ -381,11 +395,16 @@ img {
     fill: #AFB1B8;
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
     border: 1px solid var(--accent-color);
 }
 
 .clients-link:hover .clients-icon {
+    fill: var(--accent-color);
+}
+
+.clients-link:focus .clients-icon {
     fill: var(--accent-color);
 }
 
@@ -412,7 +431,7 @@ footer a.logo {
 .connect {
     display: block;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 20px;
     font-weight: 700;
@@ -443,7 +462,8 @@ footer a.logo {
     fill: var(--header-bg-color);
 }
 
-.footer-net-link:hover {
+.footer-net-link:hover,
+.footer-net-link:focus {
     background-color: var(--accent-color);
 }
 
